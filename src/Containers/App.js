@@ -45,7 +45,7 @@ class App extends Component {
                         </div>  
                         <SearchBox searchChange = { this.onSearchChange }/>
                     </div>
-                    <div>Loading...</div>
+                    <div className='tc pa3 ma6'>Loading...</div>
             </div>
         )  :    
         (
