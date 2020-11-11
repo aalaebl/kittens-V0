@@ -8,7 +8,7 @@ const SearchBox = ({searchfield , searchChange}) => {
                 placeholder="Search kittens" 
                 onChange= {searchChange} 
                 /> 
-                <i className="fa fa-search"></i> 
+                {/* <i className="fa fa-search"></i>  */}
         </div>   
     );
 }

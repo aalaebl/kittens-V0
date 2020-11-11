@@ -20,26 +20,27 @@ edf2f4
 }
 
 .title{
+    font-size: 1.5rem;
     font-family: 'Waiting for the Sunrise', cursive;
-    font-size : 2em;
     color: #edf2f4;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-
 .SearchBoxContainer{
     display : flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background : #edf2f4;
     border-radius : 25px;
-    width : 250px ;
-    height : 40px;
+    max-width : 200px;
+    max-height : 40px;
 }
 
 .SearchBox{
+    font-size: 0.9rem;
+    padding: 5px;
     color : #2b2d42;
     background : none;
     border : none;
@@ -49,8 +50,8 @@ edf2f4
 }
 
 
-.fa-search{
-    font-size : 1.3em;
+/* .fa-search{
+    font-size : 0.9rem;
     background : #edf2f4;
     color : #ef233c;
     border-radius : 50%;
@@ -60,7 +61,7 @@ edf2f4
     justify-content: center;
     align-items: center;
     transition : 0.4s ;
-}
+} */
 
 .CardList{
     overflow: hidden;
@@ -71,4 +72,9 @@ edf2f4
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.Followed{
+    background: #d90429;
+    color: #edf2f4;
 }

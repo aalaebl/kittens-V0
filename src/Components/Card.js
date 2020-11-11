@@ -1,9 +1,15 @@
-import React from 'react';
+import React ,{ useState } from 'react';
 
 const Card = ( { name, username } ) =>{
 
+    const [isFollowed, setFollow] = useState(false);
+    const isClicked = () => {
+            setFollow(!isFollowed);
+            return isFollowed
+    };
     return(
-        <div className='Card dib grow bw2'>
+        <div onClick = {isClicked} className={`Card dib grow bw2 ${isFollowed ? "Followed" : ""}`}>
+             
             <img 
                 className="profileImg" 
                 src={`https://robohash.org/${username}?set=set4`} 
@@ -12,6 +18,7 @@ const Card = ( { name, username } ) =>{
             <div className='CardText'>
                 <h2> {username} </h2>
                 <p> {name} </p>
+                <div className = "follow" >{isFollowed ? "Followed" : "Follow"}</div>
             </div>
             
         </div>

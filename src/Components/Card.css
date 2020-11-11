@@ -3,6 +3,7 @@
     margin: 20px;
     padding: 10px;
     background: white ;
+    color: #2b2d42;
     border-radius: 20px;
     height: 220px;
     width: 175px;
@@ -13,6 +14,7 @@
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
+    transition : 0.2s;
 }
 
 .profileImg{
@@ -34,5 +36,20 @@
     padding-top: 5px ;
     font-style: italic;
     word-wrap: break-word;
-    color: #2b2d42;
 }
+
+.follow{
+    margin: 5px;
+    font-size: 0.9rem;
+    padding: 5px;
+    color : #edf2f4;
+    background: #d90429;
+    border-radius: 16px;
+    transition : 0.4s ;
+}
+
+.Followed{
+    color : #edf2f4;
+    background: #d90429;
+}
+
